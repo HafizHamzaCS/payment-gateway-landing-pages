@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WooCommerce Payment Gateway Plugins for Yemeni Banks | Techosolution</title>
+<meta name="description" content="Accept online payments in your WooCommerce store with gateway plugins for Kuraimi Bank, CashPay (Tamkeen) and Al Amal Bank. Built for the latest WordPress and WooCommerce by Techosolution.">
+<meta property="og:title" content="WooCommerce Payment Gateways for Yemeni Banks | Techosolution">
+<meta property="og:description" content="Kuraimi E-Pay, CashPay and Al Amal Bank gateway plugins for WooCommerce. Checkout Blocks + classic checkout, HPOS compatible.">
+<meta property="og:type" content="website">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] } } } };
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/pg.css">
+</head>
+<body>
+<div class="pg-landing">
+
+  <!-- ============ NAV ============ -->
+  <nav class="pg-nav" aria-label="Main navigation">
+    <div class="max-w-7xl mx-auto px-5 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="flex items-center gap-2 no-underline">
+          <span class="inline-flex items-center justify-center w-9 h-9 rounded-lg font-extrabold text-white text-lg" style="background:linear-gradient(135deg,#10b981,#0ea5e9)">T</span>
+          <span class="text-white font-bold text-lg tracking-tight">Techosolution</span>
+        </a>
+        <div class="hidden md:flex items-center gap-8">
+          <a class="pg-nav-link" href="#gateways">Gateways</a>
+          <a class="pg-nav-link" href="#why">Why us</a>
+          <a class="pg-nav-link" href="#custom">Custom banks</a>
+          <a class="pg-nav-link" href="#faq">FAQ</a>
+        </div>
+        <div class="flex items-center gap-3">
+          <a class="pg-btn pg-btn-primary !py-2.5 !px-5 !text-sm hidden sm:inline-flex" data-wa-message="Hi Techosolution! I want a WooCommerce payment gateway for my store. My store URL: " href="#lead">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4 0-.5.1-.7l.4-.5c.1-.2.1-.3 0-.5L9.4 8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.2-.7.3-.9.9-1.1 2.2-.2 3.9a11.6 11.6 0 0 0 4.5 4.2c1.7.8 2.4.9 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2 0-.1-.2-.1-.5-.3z"/></svg>
+            WhatsApp us
+          </a>
+          <button class="pg-nav-toggle md:hidden text-white p-2" aria-expanded="false" aria-label="Open menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="pg-mobile-menu md:hidden border-t border-white/10">
+      <div class="px-5 py-4 flex flex-col gap-3">
+        <a class="pg-nav-link" href="#gateways">Gateways</a>
+        <a class="pg-nav-link" href="#why">Why us</a>
+        <a class="pg-nav-link" href="#custom">Custom banks</a>
+        <a class="pg-nav-link" href="#faq">FAQ</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <header class="pg-hero text-white">
+    <div class="max-w-7xl mx-auto px-5 lg:px-8 pt-16 pb-20 md:pt-24 md:pb-28">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <span class="pg-badge mb-6"><span class="pg-dot"></span>WooCommerce payment gateway plugins</span>
+          <h1 class="pg-h1 mt-5">Take online payments in Yemen. <span class="pg-gradient-text">On WooCommerce.</span></h1>
+          <p class="pg-lead text-slate-300 mt-6 max-w-xl">Gateway plugins for Kuraimi Bank, CashPay (Tamkeen) and Al Amal Bank — built for the latest WordPress and WooCommerce, working with both the block checkout and the classic checkout.</p>
+          <div class="pg-cta-row flex flex-col sm:flex-row gap-3 mt-8">
+            <a class="pg-btn pg-btn-primary" data-wa-message="Hi Techosolution! I want a WooCommerce payment gateway for my store. My store URL: " href="#lead">Chat on WhatsApp</a>
+            <a class="pg-btn pg-btn-ghost" href="#gateways">See the gateways</a>
+          </div>
+          <div class="flex flex-wrap gap-2.5 mt-10" aria-label="Compatibility">
+            <span class="pg-badge"><span class="pg-dot"></span>WordPress 7.1.2</span>
+            <span class="pg-badge"><span class="pg-dot"></span>WooCommerce 11.1.2</span>
+            <span class="pg-badge"><span class="pg-dot"></span>PHP 8.1+</span>
+            <span class="pg-badge"><span class="pg-dot"></span>HPOS compatible</span>
+            <span class="pg-badge"><span class="pg-dot"></span>Checkout Blocks</span>
+          </div>
+        </div>
+        <div class="hidden lg:block" aria-hidden="true">
+          <div class="pg-mock max-w-md ml-auto">
+            <div class="pg-mock-bar"><span></span><span></span><span></span></div>
+            <div class="p-7 text-slate-800">
+              <p class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-4">Checkout — payment method</p>
+              <div class="rounded-xl border-2 p-4 mb-3" style="border-color:#10b981;background:#ecfdf5">
+                <div class="flex items-center justify-between">
+                  <p class="font-bold">CashPay</p>
+                  <span class="text-xs font-bold text-emerald-700 bg-emerald-100 rounded-full px-2.5 py-1">SELECTED</span>
+                </div>
+                <p class="text-sm text-slate-500 mt-1">Pay with your CashPay account</p>
+              </div>
+              <div class="rounded-xl border border-slate-200 p-4 mb-5">
+                <p class="font-semibold text-slate-400">Cash on delivery</p>
+              </div>
+              <p class="text-sm font-semibold text-slate-600 mb-2">Enter the SMS code</p>
+              <div class="flex gap-2 mb-5">
+                <span class="pg-otp-box">4</span><span class="pg-otp-box">8</span><span class="pg-otp-box">1</span><span class="pg-otp-box">9</span><span class="pg-otp-box">2</span><span class="pg-otp-box">7</span>
+              </div>
+              <div class="rounded-xl text-center text-white font-bold py-3.5" style="background:linear-gradient(100deg,#10b981,#0ea5e9)">Pay 12,500 YER</div>
+              <p class="text-center text-xs text-emerald-600 font-semibold mt-3">✓ Secured with OTP verification</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ PROBLEM ============ -->
+  <section class="py-16 md:py-24 bg-white">
+    <div class="max-w-4xl mx-auto px-5 lg:px-8 text-center">
+      <span class="pg-eyebrow">The problem</span>
+      <h2 class="pg-h2">Yemeni banks don't ship WooCommerce plugins. <span class="pg-gradient-text">We built them.</span></h2>
+      <p class="text-slate-500 text-lg mt-6 max-w-2xl mx-auto">Store owners either skip online payments entirely — or pay a developer to build an integration from scratch. Slow, expensive, and it breaks on the next WooCommerce update. Our gateway plugins are ready-made, maintained, and built for the current WordPress and WooCommerce.</p>
+    </div>
+  </section>
+
+  <!-- ============ GATEWAYS ============ -->
+  <section id="gateways" class="py-16 md:py-24 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-5 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="pg-eyebrow">The gateways</span>
+        <h2 class="pg-h2">Three banks. One checkout.</h2>
+        <p class="text-slate-500 text-lg mt-4">Pick your bank. Every plugin works with the block checkout and the classic checkout, and is compatible with HPOS.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+
+        <article class="pg-card pg-card-hover p-8 flex flex-col">
+          <div class="pg-icon-tile mb-5" style="background:#fef3c7;color:#b45309">₿</div>
+          <h3 class="text-xl font-extrabold">Kuraimi E-Pay Gateway</h3>
+          <p class="text-sm font-semibold text-slate-400 mt-1">Kuraimi Islamic Bank · v1.2.1</p>
+          <p class="text-slate-500 mt-4 flex-1">Customers pay with their Kuraimi Bank account, verified by PIN right at checkout. Includes refunds from the order screen.</p>
+          <ul class="text-sm text-slate-600 mt-5 space-y-2">
+            <li>✓ PIN verification at checkout</li>
+            <li>✓ Refunds supported</li>
+            <li>✓ Block + classic checkout</li>
+          </ul>
+          <div class="flex flex-col gap-2.5 mt-7">
+            <a href="kuraimi.html" class="pg-btn pg-btn-primary !py-3">View gateway</a>
+            <a class="text-center text-sm font-semibold text-emerald-700 hover:text-emerald-800" data-wa-message="Hi Techosolution! I want the Kuraimi E-Pay gateway plugin for my store. My store URL: " href="#lead">Ask on WhatsApp →</a>
+          </div>
+        </article>
+
+        <article class="pg-card pg-card-hover p-8 flex flex-col" style="border-color:#6ee7b7;box-shadow:0 20px 44px -18px rgba(16,185,129,.28)">
+          <div class="flex items-center justify-between mb-5">
+            <div class="pg-icon-tile" style="background:#ffedd5;color:#c2410c">◈</div>
+            <span class="text-xs font-bold uppercase tracking-widest text-emerald-700 bg-emerald-100 rounded-full px-3 py-1">Most popular</span>
+          </div>
+          <h3 class="text-xl font-extrabold">CashPay Gateway</h3>
+          <p class="text-sm font-semibold text-slate-400 mt-1">Tamkeen CashPay · v1.1.0</p>
+          <p class="text-slate-500 mt-4 flex-1">Customers pay with their CashPay account — phone number, SMS code, done. No redirects, no manual reconciliation. Guest checkout supported.</p>
+          <ul class="text-sm text-slate-600 mt-5 space-y-2">
+            <li>✓ OTP send &amp; verify at checkout</li>
+            <li>✓ Guest checkout supported</li>
+            <li>✓ Block + classic checkout</li>
+          </ul>
+          <div class="flex flex-col gap-2.5 mt-7">
+            <a href="cashpay.html" class="pg-btn pg-btn-primary !py-3">View gateway</a>
+            <a class="text-center text-sm font-semibold text-emerald-700 hover:text-emerald-800" data-wa-message="Hi Techosolution! I want the CashPay gateway plugin for my store. My store URL: " href="#lead">Ask on WhatsApp →</a>
+          </div>
+        </article>
+
+        <article class="pg-card pg-card-hover p-8 flex flex-col">
+          <div class="pg-icon-tile mb-5" style="background:#dbeafe;color:#1d4ed8">⬣</div>
+          <h3 class="text-xl font-extrabold">Al Amal Bank Gateway</h3>
+          <p class="text-sm font-semibold text-slate-400 mt-1">Al Amal Bank · v1.1.1</p>
+          <p class="text-slate-500 mt-4 flex-1">Account payments for Al Amal Bank customers, confirmed by SMS code. TLS enforced in live mode.</p>
+          <ul class="text-sm text-slate-600 mt-5 space-y-2">
+            <li>✓ SMS-confirmed account payments</li>
+            <li>✓ HTTPS enforced in live mode</li>
+            <li>✓ Block + classic checkout</li>
+          </ul>
+          <div class="flex flex-col gap-2.5 mt-7">
+            <a href="alamal-bank.html" class="pg-btn pg-btn-primary !py-3">View gateway</a>
+            <a class="text-center text-sm font-semibold text-emerald-700 hover:text-emerald-800" data-wa-message="Hi Techosolution! I want the Al Amal Bank gateway plugin for my store. My store URL: " href="#lead">Ask on WhatsApp →</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BUNDLE & CUSTOM ============ -->
+  <section id="bundle" class="py-16 md:py-24 text-white" style="background:linear-gradient(135deg,#0b1220 0%,#0e2a1f 60%,#0b3b2e 100%)">
+    <div class="max-w-6xl mx-auto px-5 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="pg-eyebrow pg-eyebrow-light">Bundle &amp; custom</span>
+        <h2 class="pg-h2 text-white">Run every bank. <span class="pg-gradient-text">Or bring your own.</span></h2>
+      </div>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="rounded-2xl p-8 md:p-10 border border-emerald-400/30 bg-white/5 flex flex-col">
+          <h3 class="text-2xl font-extrabold">All 3 gateways bundle</h3>
+          <p class="mt-3"><span class="text-5xl font-extrabold">$199</span><span class="text-slate-400 font-medium">/year</span></p>
+          <p class="text-slate-300 mt-4 flex-1">Kuraimi E-Pay + CashPay + Al Amal Bank — every license, one price. Save $78/year versus buying separately.</p>
+          <ul class="text-sm text-slate-300 mt-5 space-y-2">
+            <li>✓ All three plugins, 1 year of updates</li>
+            <li>✓ 1 year of support</li>
+            <li>✓ Free compatibility check included</li>
+          </ul>
+          <a class="pg-btn pg-btn-primary mt-8" data-wa-message="Hi Techosolution! I want the 3-gateway bundle ($199/year). My store URL: " href="#lead">Get the bundle</a>
+        </div>
+        <div class="rounded-2xl p-8 md:p-10 border border-white/10 bg-white/5 flex flex-col">
+          <h3 class="text-2xl font-extrabold">Need another bank?</h3>
+          <p class="mt-3"><span class="text-2xl font-extrabold text-slate-200">Custom gateway development</span></p>
+          <p class="mt-1 text-emerald-300 font-bold">from $499</p>
+          <p class="text-slate-300 mt-4 flex-1">We build bespoke WooCommerce gateway integrations for banks and mobile-money providers — scoped and quoted as a project.</p>
+          <ul class="text-sm text-slate-300 mt-5 space-y-2">
+            <li>✓ Your bank, your checkout</li>
+            <li>✓ Block + classic checkout support</li>
+            <li>✓ HPOS-ready, security-reviewed</li>
+          </ul>
+          <a class="pg-btn pg-btn-ghost mt-8" data-wa-message="Hi Techosolution! I need a custom WooCommerce payment gateway (from $499). My bank / details: " href="#lead">Discuss your bank</a>
+        </div>
+      </div>
+      <p class="text-center text-sm font-semibold text-emerald-300 mt-8">7-day money-back — if we can't get it running on your stack, you get a refund.</p>
+    </div>
+  </section>
+
+  <!-- ============ WHY US ============ -->
+  <section id="why" class="py-16 md:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-5 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="pg-eyebrow">Why Techosolution</span>
+        <h2 class="pg-h2">Built by a WooCommerce team, <span class="pg-gradient-text">not a weekend script.</span></h2>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="pg-card p-7">
+          <div class="pg-icon-tile mb-4" style="background:#ecfdf5;color:#059669">▦</div>
+          <h3 class="font-bold text-lg mb-2">Modern checkout, both ways</h3>
+          <p class="text-slate-500 text-sm">Works with WooCommerce's block checkout and the classic shortcode checkout — your gateway shows up wherever your customers check out.</p>
+        </div>
+        <div class="pg-card p-7">
+          <div class="pg-icon-tile mb-4" style="background:#eff6ff;color:#2563eb">◩</div>
+          <h3 class="font-bold text-lg mb-2">HPOS-ready</h3>
+          <p class="text-slate-500 text-sm">Built for WooCommerce's high-performance order storage with proper CRUD usage — no legacy post-meta hacks.</p>
+        </div>
+        <div class="pg-card p-7">
+          <div class="pg-icon-tile mb-4" style="background:#fef3c7;color:#b45309">⬢</div>
+          <h3 class="font-bold text-lg mb-2">Security-first</h3>
+          <p class="text-slate-500 text-sm">TLS enforced in live mode, rate-limited verification endpoints, and credentials never written to logs.</p>
+        </div>
+        <div class="pg-card p-7">
+          <div class="pg-icon-tile mb-4" style="background:#f5f3ff;color:#7c3aed">✦</div>
+          <h3 class="font-bold text-lg mb-2">Kept up to date</h3>
+          <p class="text-slate-500 text-sm">Built against the latest WordPress, WooCommerce and PHP — and maintained as they evolve, so updates don't break your checkout.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW IT WORKS ============ -->
+  <section class="py-16 md:py-24 bg-slate-50">
+    <div class="max-w-5xl mx-auto px-5 lg:px-8">
+      <div class="text-center mb-12">
+        <span class="pg-eyebrow">How it works</span>
+        <h2 class="pg-h2">From message to payments in three steps.</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="pg-card p-8">
+          <span class="pg-step-num mb-5">1</span>
+          <h3 class="font-bold text-lg mt-4 mb-2">Message us your store URL</h3>
+          <p class="text-slate-500 text-sm">Chat on WhatsApp or use the form below. Tell us which bank you need — Kuraimi, CashPay or Al Amal Bank.</p>
+        </div>
+        <div class="pg-card p-8">
+          <span class="pg-step-num mb-5">2</span>
+          <h3 class="font-bold text-lg mt-4 mb-2">Free compatibility check</h3>
+          <p class="text-slate-500 text-sm">Within 24 hours we confirm your checkout works with the gateway — free, no commitment.</p>
+        </div>
+        <div class="pg-card p-8">
+          <span class="pg-step-num mb-5">3</span>
+          <h3 class="font-bold text-lg mt-4 mb-2">Get a quote, go live</h3>
+          <p class="text-slate-500 text-sm">You get a clear quote. We deliver the plugin — installation help available — and you start taking payments.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CUSTOM BANKS ============ -->
+  <section id="custom" class="py-16 md:py-24 text-white" style="background:linear-gradient(135deg,#0b1220 0%,#123326 60%,#0b3b2e 100%)">
+    <div class="max-w-4xl mx-auto px-5 lg:px-8 text-center">
+      <span class="pg-eyebrow pg-eyebrow-light">Custom integrations</span>
+      <h2 class="pg-h2 text-white">Your bank not listed? <span class="pg-gradient-text">We'll build your gateway.</span></h2>
+      <p class="text-slate-300 text-lg mt-6 max-w-2xl mx-auto">We build custom WooCommerce payment gateway integrations for banks and mobile-money providers — scoped, quoted and delivered as a project. If your customers pay through it, we can put it on your checkout.</p>
+      <div class="mt-8">
+        <a class="pg-btn pg-btn-primary" data-wa-message="Hi Techosolution! I need a custom WooCommerce payment gateway for my bank. Details: " href="#lead">Discuss your bank on WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COMPATIBILITY ============ -->
+  <section class="py-16 md:py-24 bg-white">
+    <div class="max-w-4xl mx-auto px-5 lg:px-8">
+      <div class="text-center mb-10">
+        <span class="pg-eyebrow">Compatibility</span>
+        <h2 class="pg-h2">Built for the current stack.</h2>
+        <p class="text-slate-500 mt-4">Every gateway is developed against the latest WordPress, WooCommerce and PHP releases.</p>
+      </div>
+      <div class="pg-card p-2 md:p-4">
+        <div class="pg-table-wrap">
+          <table class="pg-table">
+            <thead><tr><th>Requirement</th><th>Kuraimi v1.2.1</th><th>CashPay v1.1.0</th><th>Al Amal v1.1.1</th></tr></thead>
+            <tbody>
+              <tr><td>WordPress</td><td>7.1.2</td><td>7.1.2</td><td>7.1.2</td></tr>
+              <tr><td>WooCommerce</td><td>11.1.2</td><td>11.1.2</td><td>11.1.2</td></tr>
+              <tr><td>PHP</td><td>8.1+</td><td>8.1+</td><td>8.1+</td></tr>
+              <tr><td>HPOS</td><td class="pg-yes">✓</td><td class="pg-yes">✓</td><td class="pg-yes">✓</td></tr>
+              <tr><td>Checkout Blocks</td><td class="pg-yes">✓</td><td class="pg-yes">✓</td><td class="pg-yes">✓</td></tr>
+              <tr><td>Classic checkout</td><td class="pg-yes">✓</td><td class="pg-yes">✓</td><td class="pg-yes">✓</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <p class="text-center text-sm text-slate-400 mt-6">WooCommerce 11.6 (February 2027) requires PHP 8.1 or newer — all three gateways already declare PHP 8.1 as their minimum.</p>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq" class="py-16 md:py-24 bg-slate-50">
+    <div class="max-w-3xl mx-auto px-5 lg:px-8">
+      <div class="text-center mb-10">
+        <span class="pg-eyebrow">FAQ</span>
+        <h2 class="pg-h2">Questions, answered.</h2>
+      </div>
+      <div class="space-y-4">
+        <div class="pg-faq-item">
+          <button class="pg-faq-q" aria-expanded="false">Will it work with my theme?<span class="pg-faq-chev">+</span></button>
+          <div class="pg-faq-a"><div class="pg-faq-a-inner">If your checkout is standard WooCommerce — blocks or shortcode — yes. Send us your store URL and we'll run a free compatibility check within 24 hours before you commit to anything.</div></div>
+        </div>
+        <div class="pg-faq-item">
+          <button class="pg-faq-q" aria-expanded="false">Do I need an account with the bank?<span class="pg-faq-chev">+</span></button>
+          <div class="pg-faq-a"><div class="pg-faq-a-inner">Yes — you'll need your merchant or API credentials from the bank (Kuraimi, Tamkeen/CashPay, or Al Amal Bank). We help you enter and configure them correctly, including test mode first.</div></div>
+        </div>
+        <div class="pg-faq-item">
+          <button class="pg-faq-q" aria-expanded="false">Can I test before going live?<span class="pg-faq-chev">+</span></button>
+          <div class="pg-faq-a"><div class="pg-faq-a-inner">Yes. Every gateway ships with a test/sandbox mode so you can walk through the full checkout flow — PIN, OTP or SMS verification — before real money moves.</div></div>
+        </div>
+        <div class="pg-faq-item">
+          <button class="pg-faq-q" aria-expanded="false">How much does it cost?<span class="pg-faq-chev">+</span></button>
+          <div class="pg-faq-a"><div class="pg-faq-a-inner">Each gateway page lists clear pricing — Single Site from $89/year, or let us install and configure it for you from $189 one-time. Running multiple banks? The all-3-gateway bundle is $199/year. Renewals are 40% after year one, and every purchase carries a 7-day money-back promise.</div></div>
+        </div>
+        <div class="pg-faq-item">
+          <button class="pg-faq-q" aria-expanded="false">What happens when WooCommerce updates?<span class="pg-faq-chev">+</span></button>
+          <div class="pg-faq-a"><div class="pg-faq-a-inner">The plugins are built against the latest WordPress, WooCommerce and PHP, and maintained as they evolve — including the PHP 8.1+ requirement arriving with WooCommerce 11.6. Updates keep your checkout working.</div></div>
+        </div>
+        <div class="pg-faq-item">
+          <button class="pg-faq-q" aria-expanded="false">Can you integrate a different bank?<span class="pg-faq-chev">+</span></button>
+          <div class="pg-faq-a"><div class="pg-faq-a-inner">Yes — custom gateway integrations are our bread and butter. Tell us which bank or mobile-money provider on WhatsApp and we'll scope it.</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LEAD FORM ============ -->
+  <section id="lead" class="py-16 md:py-24 bg-white">
+    <div class="max-w-3xl mx-auto px-5 lg:px-8">
+      <div class="text-center mb-10">
+        <span class="pg-eyebrow">Free compatibility check</span>
+        <h2 class="pg-h2">Send your store URL. <span class="pg-gradient-text">We'll reply within 24 hours.</span></h2>
+        <p class="text-slate-500 mt-4">Fill this in and we'll continue on WhatsApp — no spam, no obligation.</p>
+      </div>
+      <div class="pg-card p-7 md:p-10">
+        <form class="pg-lead-form" data-gateway="a payment gateway" novalidate>
+          <div class="grid md:grid-cols-2 gap-5">
+            <div class="pg-field">
+              <label for="hub-name">Your name *</label>
+              <input id="hub-name" name="name" type="text" autocomplete="name" placeholder="e.g. Ahmed Al-Harazi">
+            </div>
+            <div class="pg-field">
+              <label for="hub-wa">WhatsApp number *</label>
+              <input id="hub-wa" name="whatsapp" type="tel" autocomplete="tel" placeholder="e.g. +967 7XX XXX XXX">
+            </div>
+            <div class="pg-field">
+              <label for="hub-interest">I'm interested in</label>
+              <select id="hub-interest" name="interest">
+                <option value="Kuraimi E-Pay gateway">Kuraimi E-Pay gateway</option>
+                <option value="CashPay gateway">CashPay gateway</option>
+                <option value="Al Amal Bank gateway">Al Amal Bank gateway</option>
+                <option value="A custom bank gateway">A custom bank gateway</option>
+                <option value="Not sure yet">Not sure yet</option>
+              </select>
+            </div>
+            <div class="pg-field">
+              <label for="hub-email">Email (optional)</label>
+              <input id="hub-email" name="email" type="email" autocomplete="email" placeholder="you@example.com">
+            </div>
+            <div class="pg-field md:col-span-2">
+              <label for="hub-store">Store URL</label>
+              <input id="hub-store" name="store_url" type="url" inputmode="url" placeholder="https://yourstore.com">
+            </div>
+            <div class="pg-field md:col-span-2">
+              <label for="hub-msg">Anything we should know? (optional)</label>
+              <textarea id="hub-msg" name="message" rows="3" placeholder="Your bank, your checkout setup, timeline…"></textarea>
+            </div>
+          </div>
+          <input class="pg-honeypot" type="text" name="company_website" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <button type="submit" class="pg-btn pg-btn-primary w-full mt-7">Continue on WhatsApp →</button>
+          <p class="pg-form-note text-center mt-4">Submitting opens WhatsApp with your details pre-filled. We reply within 24 hours.</p>
+        </form>
+        <div class="pg-form-success text-center py-10" style="display:none">
+          <div class="inline-flex items-center justify-center w-16 h-16 rounded-full mb-5" style="background:#ecfdf5;color:#059669;font-size:1.8rem">✓</div>
+          <h3 class="text-2xl font-extrabold mb-3">Opening WhatsApp…</h3>
+          <p class="text-slate-500">Your message is pre-filled — just press send. We'll reply within 24 hours.</p>
+        </div>
+        <div class="pg-form-warn text-center py-6" style="display:none">
+          <p class="text-amber-700 bg-amber-50 border border-amber-200 rounded-xl px-5 py-4 text-sm font-medium">WhatsApp ordering isn't connected on this page yet — please check back soon, or reach us via techosolution.com.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="pg-footer text-slate-400">
+    <div class="max-w-7xl mx-auto px-5 lg:px-8 py-14">
+      <div class="grid md:grid-cols-4 gap-10">
+        <div class="md:col-span-2">
+          <div class="flex items-center gap-2 mb-4">
+            <span class="inline-flex items-center justify-center w-9 h-9 rounded-lg font-extrabold text-white text-lg" style="background:linear-gradient(135deg,#10b981,#0ea5e9)">T</span>
+            <span class="text-white font-bold text-lg">Techosolution</span>
+          </div>
+          <p class="text-sm max-w-sm">WooCommerce development, custom plugins and payment gateway integrations. <a href="https://techosolution.com">techosolution.com</a></p>
+        </div>
+        <div>
+          <p class="text-white font-bold text-sm uppercase tracking-widest mb-4">Gateways</p>
+          <ul class="space-y-2.5 text-sm">
+            <li><a href="kuraimi.html">Kuraimi E-Pay</a></li>
+            <li><a href="cashpay.html">CashPay</a></li>
+            <li><a href="alamal-bank.html">Al Amal Bank</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="text-white font-bold text-sm uppercase tracking-widest mb-4">Company</p>
+          <ul class="space-y-2.5 text-sm">
+            <li><a href="https://techosolution.com">techosolution.com</a></li>
+            <li><a href="#custom">Custom bank integrations</a></li>
+            <li><a href="#lead">Free compatibility check</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-white/10 mt-12 pt-7 flex flex-col sm:flex-row justify-between gap-3 text-sm">
+        <p>© 2026 Techosolution. All rights reserved.</p>
+        <p>WooCommerce payment gateways for Yemeni banks.</p>
+      </div>
+    </div>
+  </footer>
+
+</div><!-- /.pg-landing -->
+<script src="assets/js/pg.js"></script>
+</body>
+</html>
