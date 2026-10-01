@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Al Amal Bank WooCommerce Payment Gateway Plugin | Techosolution</title>
+<meta name="description" content="Accept Al Amal Bank payments in WooCommerce with SMS confirmation at checkout. HPOS-ready, works with Checkout Blocks and classic checkout.">
+<meta property="og:title" content="Al Amal Bank Gateway for WooCommerce | Techosolution">
+<meta property="og:description" content="SMS-confirmed Al Amal Bank payments on your WooCommerce checkout. Block + classic checkout, HPOS compatible, TLS enforced.">
+<meta property="og:type" content="website">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] } } } };
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/pg.css">
+</head>
+<body>
+<div class="pg-landing">
+
+  <!-- ============ NAV ============ -->
+  <nav class="pg-nav" aria-label="Main navigation">
+    <div class="max-w-7xl mx-auto px-5 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="flex items-center gap-2 no-underline">
+          <span class="inline-flex items-center justify-center w-9 h-9 rounded-lg font-extrabold text-white text-lg" style="background:linear-gradient(135deg,#38bdf8,#6366f1)">T</span>
+          <span class="text-white font-bold text-lg tracking-tight">Techosolution</span>
+        </a>
+        <div class="hidden md:flex items-center gap-8">
+          <a class="pg-nav-link" href="index.html#gateways">All gateways</a>
+          <a class="pg-nav-link" href="#features">Features</a>
+          <a class="pg-nav-link" href="#pricing">Pricing</a>
+          <a class="pg-nav-link" href="#faq">FAQ</a>
+        </div>
+        <div class="flex items-center gap-3">
+          <a class="pg-btn pg-btn-primary !py-2.5 !px-5 !text-sm hidden sm:inline-flex" data-wa-message="Hi Techosolution! I want the Al Amal Bank gateway plugin for my store. My store URL: " href="#lead">WhatsApp us</a>
+          <button class="pg-nav-toggle md:hidden text-white p-2" aria-expanded="false" aria-label="Open menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="pg-mobile-menu md:hidden border-t border-white/10">
+      <div class="px-5 py-4 flex flex-col gap-3">
+        <a class="pg-nav-link" href="index.html#gateways">All gateways</a>
+        <a class="pg-nav-link" href="#features">Features</a>
+        <a class="pg-nav-link" href="#pricing">Pricing</a>
+        <a class="pg-nav-link" href="#faq">FAQ</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <header class="pg-hero pg-hero-blue text-white">
+    <div class="max-w-7xl mx-auto px-5 lg:px-8 pt-16 pb-20 md:pt-24 md:pb-28">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <span class="pg-badge mb-6"><span class="pg-dot"></span>Al Amal Bank · SMS Gateway · v1.1.1</span>
+          <h1 class="pg-h1 mt-5">Al Amal Bank payments, <span class="pg-gradient-blue">confirmed by SMS.</span></h1>
+          <p class="pg-lead text-slate-300 mt-6 max-w-xl">Accept account payments from Al Amal Bank customers — SMS confirmation at checkout, TLS enforced in live mode, orders marked paid automatically.</p>
+          <div class="pg-cta-row flex flex-col sm:flex-row gap-3 mt-8">
+            <a class="pg-btn pg-btn-primary" data-wa-message="Hi Techosolution! I want the Al Amal Bank gateway plugin for my store. My store URL: " href="#lead">Chat on WhatsApp</a>
+            <a class="pg-btn pg-btn-ghost" href="#pricing">See pricing</a>
+          </div>
+          <div class="flex flex-wrap gap-2.5 mt-10" aria-label="Compatibility">
+            <span class="pg-badge"><span class="pg-dot"></span>WordPress 7.1.2</span>
+            <span class="pg-badge"><span class="pg-dot"></span>WooCommerce 11.1.2</span>
+            <span class="pg-badge"><span class="pg-dot"></span>PHP 8.1+</span>
+            <span class="pg-badge"><span class="pg-dot"></span>HPOS compatible</span>
+            <span class="pg-badge"><span class="pg-dot"></span>Checkout Blocks</span>
+          </div>
+        </div>
+        <div class="hidden lg:block" aria-hidden="true">
+          <div class="pg-mock max-w-md ml-auto">
+            <div class="pg-mock-bar"><span></span><span></span><span></span></div>
+            <div class="p-7 text-slate-800">
+              <p class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-4">Checkout — Al Amal Bank</p>
+              <div class="rounded-xl border-2 p-4 mb-4" style="border-color:#38bdf8;background:#f0f9ff">
+                <div class="flex items-center justify-between">
+                  <p class="font-bold">Al Amal Bank</p>
+                  <span class="text-xs font-bold text-sky-700 bg-sky-100 rounded-full px-2.5 py-1">SELECTED</span>
+                </div>
+                <p class="text-sm text-slate-500 mt-1">Pay from your Al Amal account</p>
+              </div>
+              <div class="rounded-xl p-4 mb-4" style="background:#f0f9ff;border:1px solid #bae6fd">
+                <p class="text-xs text-sky-700 font-semibold">📩 SMS from Al Amal Bank</p>
+                <p class="text-sm text-slate-600 mt-1">Your confirmation code is <strong>582 913</strong>. Valid 15 minutes.</p>
+              </div>
+              <div class="rounded-xl text-center text-white font-bold py-3.5" style="background:linear-gradient(100deg,#38bdf8,#6366f1)">Confirm &amp; Pay 5,400 YER</div>
+              <p class="text-center text-xs text-sky-600 font-semibold mt-3">✓ SMS confirmed · HTTPS enforced</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ PROBLEM ============ -->
+  <section class="py-16 md:py-24 bg-white">
+    <div class="max-w-4xl mx-auto px-5 lg:px-8 text-center">
+      <span class="pg-eyebrow">The problem</span>
+      <h2 class="pg-h2">Al Amal Bank customers want to pay online. <span class="pg-gradient-blue">Give them a checkout that lets them.</span></h2>
+      <p class="text-slate-500 text-lg mt-6 max-w-2xl mx-auto">Al Amal Bank doesn't provide a WooCommerce plugin — so stores fall back to manual bank transfers and spreadsheet reconciliation. This gateway adds SMS-confirmed Al Amal payments directly to your checkout, with proper security and order handling.</p>
+    </div>
+  </section>
+
+  <!-- ============ FEATURES ============ -->
+  <section id="features" class="py-16 md:py-24 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-5 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="pg-eyebrow">Features</span>
+        <h2 class="pg-h2">Secure bank payments, simplified.</h2>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="pg-card p-7">
+          <div class="pg-icon-tile mb-4" style="background:#e0f2fe;color:#0284c7">✉</div>
+          <h3 class="font-bold text-lg mb-2">SMS confirmation at checkout</h3>
+          <p class="text-slate-500 text-sm">Customers confirm payment with an SMS code — embedded in block and classic checkouts, no redirects.</p>
+        </div>
+        <div class="pg-card p-7">
+          <div class="pg-icon-tile mb-4" style="background:#ecfdf5;color:#059669">🔒</div>
+          <h3 class="font-bold text-lg mb-2">HTTPS enforced in live mode</h3>
+          <p class="text-slate-500 text-sm">The plugin refuses to talk to the bank over anything but verified HTTPS in production. No exceptions.</p>
+        </div>
+        <div class="pg-card p-7">
+          <div class="pg-icon-tile mb-4" style="background:#fef3c7;color:#b45309">⬢</div>
+          <h3 class="font-bold text-lg mb-2">Rate-limited SMS flow</h3>
+          <p class="text-slate-500 text-sm">Code requests are throttled per IP and expire after 15 minutes — SMS spam and replay abuse blocked.</p>
+        </div>
+        <div class="pg-card p-7">
+          <div class="pg-icon-tile mb-4" style="background:#f5f3ff;color:#7c3ed6">⛨</div>
+          <h3 class="font-bold text-lg mb-2">Verification bound to the order</h3>
+          <p class="text-slate-500 text-sm">Each SMS code is tied to the account and cart total, and re-validated at payment — codes can't be reused or swapped.</p>
+        </div>
+        <div class="pg-card p-7">
+          <div class="pg-icon-tile mb-4" style="background:#ecfeff;color:#0e7490">▦</div>
+          <h3 class="font-bold text-lg mb-2">HPOS-ready, block checkout</h3>
+          <p class="text-slate-500 text-sm">Clean CRUD-based order handling for high-performance order storage, with native block-checkout support.</p>
+        </div>
+        <div class="pg-card p-7">
+          <div class="pg-icon-tile mb-4" style="background:#fff7ed;color:#c2410c">✦</div>
+          <h3 class="font-bold text-lg mb-2">Test mode included</h3>
+          <p class="text-slate-500 text-sm">Run the full SMS flow in test mode before going live. Only the bank's response code is stored on orders — never raw payloads.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW IT WORKS ============ -->
+  <section id="how" class="py-16 md:py-24 bg-white">
+    <div class="max-w-5xl mx-auto px-5 lg:px-8">
+      <div class="text-center mb-12">
+        <span class="pg-eyebrow">How it works</span>
+        <h2 class="pg-h2">Account. SMS code. Paid.</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="pg-card p-8">
+          <span class="pg-step-num mb-4">1</span>
+          <h3 class="font-bold mt-4 mb-2">Customer picks Al Amal Bank</h3>
+          <p class="text-slate-500 text-sm">At checkout they select Al Amal Bank and enter their account details.</p>
+        </div>
+        <div class="pg-card p-8">
+          <span class="pg-step-num mb-4">2</span>
+          <h3 class="font-bold mt-4 mb-2">Confirms via SMS</h3>
+          <p class="text-slate-500 text-sm">The bank sends a confirmation code; the customer enters it on the checkout page.</p>
+        </div>
+        <div class="pg-card p-8">
+          <span class="pg-step-num mb-4">3</span>
+          <h3 class="font-bold mt-4 mb-2">Order marked paid</h3>
+          <p class="text-slate-500 text-sm">The payment confirms and WooCommerce marks the order paid automatically. You ship.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECURITY ============ -->
+  <section class="py-16 md:py-24 text-white" style="background:linear-gradient(135deg,#0a0f1e 0%,#0e1530 60%,#131a3d 100%)">
+    <div class="max-w-5xl mx-auto px-5 lg:px-8">
+      <div class="text-center mb-12">
+        <span class="pg-eyebrow pg-eyebrow-light">Security</span>
+        <h2 class="pg-h2 text-white">Paranoid about <span class="pg-gradient-blue">bank traffic.</span></h2>
+      </div>
+      <div class="grid sm:grid-cols-2 gap-6">
+        <div class="rounded-2xl p-7 border border-white/10 bg-white/5">
+          <h3 class="font-bold text-lg mb-2">HTTPS-only in production</h3>
+          <p class="text-slate-300 text-sm">Live mode refuses non-HTTPS bank endpoints outright, and TLS certificate verification stays on — bank credentials never travel in the clear.</p>
+        </div>
+        <div class="rounded-2xl p-7 border border-white/10 bg-white/5">
+          <h3 class="font-bold text-lg mb-2">Nonce-verified payments</h3>
+          <p class="text-slate-300 text-sm">Every payment request carries a verified nonce — classic and block checkouts both — blocking forged payment submissions.</p>
+        </div>
+        <div class="rounded-2xl p-7 border border-white/10 bg-white/5">
+          <h3 class="font-bold text-lg mb-2">Expiring, single-use codes</h3>
+          <p class="text-slate-300 text-sm">SMS codes expire after 15 minutes and are bound to one account and one cart total. A changed cart invalidates the code.</p>
+        </div>
+        <div class="rounded-2xl p-7 border border-white/10 bg-white/5">
+          <h3 class="font-bold text-lg mb-2">Minimal data footprint</h3>
+          <p class="text-slate-300 text-sm">Only the bank's response code and message are stored on the order — full API payloads and credentials never touch your database or logs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COMPATIBILITY ============ -->
+  <section class="py-16 md:py-24 bg-white">
+    <div class="max-w-3xl mx-auto px-5 lg:px-8">
+      <div class="text-center mb-10">
+        <span class="pg-eyebrow">Compatibility</span>
+        <h2 class="pg-h2">Built for the current stack.</h2>
+      </div>
+      <div class="pg-card p-2 md:p-4">
+        <div class="pg-table-wrap">
+          <table class="pg-table">
+            <tbody>
+              <tr><td class="font-semibold">WordPress</td><td>7.1.2</td></tr>
+              <tr><td class="font-semibold">WooCommerce</td><td>11.1.2 (requires 9.0+)</td></tr>
+              <tr><td class="font-semibold">PHP</td><td>8.1 or newer</td></tr>
+              <tr><td class="font-semibold">HPOS</td><td class="pg-yes">✓ Compatible</td></tr>
+              <tr><td class="font-semibold">Checkout Blocks</td><td class="pg-yes">✓ Supported</td></tr>
+              <tr><td class="font-semibold">Classic checkout</td><td class="pg-yes">✓ Supported</td></tr>
+              <tr><td class="font-semibold">Guest checkout</td><td class="pg-yes">✓ Supported</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRICING ============ -->
+  <section id="pricing" class="py-16 md:py-24 bg-slate-50">
+    <div class="max-w-6xl mx-auto px-5 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="pg-eyebrow">Pricing</span>
+        <h2 class="pg-h2">Simple pricing. <span class="pg-gradient-blue">Serious checkout.</span></h2>
+        <p class="text-slate-500 text-lg mt-4">License it and install it yourself — or let our team set it up on your store.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6 items-stretch">
+        <div class="pg-card pg-card-hover p-8 flex flex-col">
+          <h3 class="font-bold text-lg">Single Site</h3>
+          <p class="mt-3"><span class="text-4xl font-extrabold">$89</span><span class="text-slate-400 font-medium">/year</span></p>
+          <ul class="text-sm text-slate-600 mt-6 space-y-2.5 flex-1">
+            <li>✓ Plugin license for 1 site</li>
+            <li>✓ 1 year of updates</li>
+            <li>✓ 1 year of support</li>
+            <li>✓ Test mode included</li>
+          </ul>
+          <a class="pg-btn w-full mt-7" style="background:#0f172a;color:#fff" data-wa-message="Hi Techosolution! I want the Al Amal Bank gateway — Single Site plan ($89/year). My store URL: " href="#lead">Choose Single Site</a>
+        </div>
+        <div class="pg-card p-8 flex flex-col relative" style="border:2px solid #38bdf8;box-shadow:0 24px 48px -16px rgba(56,189,248,.35)">
+          <span class="absolute -top-3.5 left-1/2 -translate-x-1/2 text-xs font-bold uppercase tracking-widest text-white rounded-full px-4 py-1.5" style="background:linear-gradient(100deg,#38bdf8,#6366f1)">Most popular</span>
+          <h3 class="font-bold text-lg">Installed</h3>
+          <p class="mt-3"><span class="text-4xl font-extrabold">$189</span><span class="text-slate-400 font-medium"> one-time</span></p>
+          <ul class="text-sm text-slate-600 mt-6 space-y-2.5 flex-1">
+            <li>✓ Everything in Single Site</li>
+            <li>✓ <strong>We install &amp; configure it</strong> on your store</li>
+            <li>✓ Bank credentials set up with you</li>
+            <li>✓ Test transaction walkthrough</li>
+          </ul>
+          <a class="pg-btn pg-btn-primary w-full mt-7" data-wa-message="Hi Techosolution! I want the Al Amal Bank gateway — Installed plan ($189 one-time). My store URL: " href="#lead">Choose Installed</a>
+        </div>
+        <div class="pg-card pg-card-hover p-8 flex flex-col">
+          <h3 class="font-bold text-lg">Something bigger?</h3>
+          <p class="text-slate-500 text-sm mt-3 flex-1">Multiple sites, reseller pricing, or a custom bank integration — tell us what you need and we'll quote it fast.</p>
+          <ul class="text-sm text-slate-600 mt-6 space-y-2.5">
+            <li>✓ Multi-site &amp; agency use</li>
+            <li>✓ Reseller partnerships</li>
+            <li>✓ Custom gateway builds</li>
+          </ul>
+          <a class="pg-btn pg-btn-ghost w-full mt-7 !text-slate-700 !border-slate-300" style="background:#f1f5f9" data-wa-message="Hi Techosolution! I need a bigger Al Amal Bank setup (multi-site / reseller / custom). Details: " href="#lead">Talk to us</a>
+        </div>
+      </div>
+      <p class="text-center text-sm text-slate-500 mt-8">Renew after year one at 40% for continued updates &amp; support.</p>
+      <p class="text-center text-sm font-semibold text-emerald-700 mt-3">7-day money-back — if we can't get it running on your stack, you get a refund.</p>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq" class="py-16 md:py-24 bg-white">
+    <div class="max-w-3xl mx-auto px-5 lg:px-8">
+      <div class="text-center mb-10">
+        <span class="pg-eyebrow">FAQ</span>
+        <h2 class="pg-h2">Questions, answered.</h2>
+      </div>
+      <div class="space-y-4">
+        <div class="pg-faq-item">
+          <button class="pg-faq-q" aria-expanded="false">Will it work with my theme?<span class="pg-faq-chev">+</span></button>
+          <div class="pg-faq-a"><div class="pg-faq-a-inner">If your checkout is standard WooCommerce — blocks or shortcode — yes. Send us your store URL and we'll run a free compatibility check within 24 hours before you commit to anything.</div></div>
+        </div>
+        <div class="pg-faq-item">
+          <button class="pg-faq-q" aria-expanded="false">Do I need Al Amal Bank credentials?<span class="pg-faq-chev">+</span></button>
+          <div class="pg-faq-a"><div class="pg-faq-a-inner">Yes — you'll need your Al Amal Bank API credentials. We help you configure them, starting in test mode so you can try the full SMS flow safely before going live.</div></div>
+        </div>
+        <div class="pg-faq-item">
+          <button class="pg-faq-q" aria-expanded="false">Is the bank connection secure?<span class="pg-faq-chev">+</span></button>
+          <div class="pg-faq-a"><div class="pg-faq-a-inner">Yes. In live mode the plugin only communicates with the bank over verified HTTPS — it refuses anything else — and credentials are never stored in logs or order data.</div></div>
+        </div>
+        <div class="pg-faq-item">
+          <button class="pg-faq-q" aria-expanded="false">What's the difference between Single Site and Installed?<span class="pg-faq-chev">+</span></button>
+          <div class="pg-faq-a"><div class="pg-faq-a-inner">Single Site is the plugin license — you install and configure it yourself. Installed means our team does it for you: installation, bank credential setup, and a test transaction walkthrough on your store.</div></div>
+        </div>
+        <div class="pg-faq-item">
+          <button class="pg-faq-q" aria-expanded="false">What if it doesn't work on my store?<span class="pg-faq-chev">+</span></button>
+          <div class="pg-faq-a"><div class="pg-faq-a-inner">That's what the free compatibility check is for — we verify before you pay. And every purchase carries a 7-day money-back promise: if we can't get it running on your stack, you get a refund.</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LEAD FORM ============ -->
+  <section id="lead" class="py-16 md:py-24 bg-slate-50">
+    <div class="max-w-3xl mx-auto px-5 lg:px-8">
+      <div class="text-center mb-10">
+        <span class="pg-eyebrow">Free compatibility check</span>
+        <h2 class="pg-h2">Send your store URL. <span class="pg-gradient-blue">We'll reply within 24 hours.</span></h2>
+        <p class="text-slate-500 mt-4">Fill this in and we'll continue on WhatsApp — no spam, no obligation.</p>
+      </div>
+      <div class="pg-card p-7 md:p-10">
+        <form class="pg-lead-form" data-gateway="Al Amal Bank gateway" novalidate>
+          <div class="grid md:grid-cols-2 gap-5">
+            <div class="pg-field">
+              <label for="a-name">Your name *</label>
+              <input id="a-name" name="name" type="text" autocomplete="name" placeholder="e.g. Ahmed Al-Harazi">
+            </div>
+            <div class="pg-field">
+              <label for="a-wa">WhatsApp number *</label>
+              <input id="a-wa" name="whatsapp" type="tel" autocomplete="tel" placeholder="e.g. +967 7XX XXX XXX">
+            </div>
+            <div class="pg-field">
+              <label for="a-email">Email (optional)</label>
+              <input id="a-email" name="email" type="email" autocomplete="email" placeholder="you@example.com">
+            </div>
+            <div class="pg-field">
+              <label for="a-store">Store URL</label>
+              <input id="a-store" name="store_url" type="url" inputmode="url" placeholder="https://yourstore.com">
+            </div>
+            <div class="pg-field md:col-span-2">
+              <label for="a-msg">Anything we should know? (optional)</label>
+              <textarea id="a-msg" name="message" rows="3" placeholder="Your Al Amal account status, timeline…"></textarea>
+            </div>
+          </div>
+          <input class="pg-honeypot" type="text" name="company_website" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <button type="submit" class="pg-btn pg-btn-primary w-full mt-7">Continue on WhatsApp →</button>
+          <p class="pg-form-note text-center mt-4">Submitting opens WhatsApp with your details pre-filled. We reply within 24 hours.</p>
+        </form>
+        <div class="pg-form-success text-center py-10" style="display:none">
+          <div class="inline-flex items-center justify-center w-16 h-16 rounded-full mb-5" style="background:#ecfdf5;color:#059669;font-size:1.8rem">✓</div>
+          <h3 class="text-2xl font-extrabold mb-3">Opening WhatsApp…</h3>
+          <p class="text-slate-500">Your message is pre-filled — just press send. We'll reply within 24 hours.</p>
+        </div>
+        <div class="pg-form-warn text-center py-6" style="display:none">
+          <p class="text-amber-700 bg-amber-50 border border-amber-200 rounded-xl px-5 py-4 text-sm font-medium">WhatsApp ordering isn't connected on this page yet — please check back soon, or reach us via techosolution.com.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="pg-footer text-slate-400">
+    <div class="max-w-7xl mx-auto px-5 lg:px-8 py-14">
+      <div class="grid md:grid-cols-4 gap-10">
+        <div class="md:col-span-2">
+          <div class="flex items-center gap-2 mb-4">
+            <span class="inline-flex items-center justify-center w-9 h-9 rounded-lg font-extrabold text-white text-lg" style="background:linear-gradient(135deg,#38bdf8,#6366f1)">T</span>
+            <span class="text-white font-bold text-lg">Techosolution</span>
+          </div>
+          <p class="text-sm max-w-sm">WooCommerce development, custom plugins and payment gateway integrations. <a href="https://techosolution.com">techosolution.com</a></p>
+        </div>
+        <div>
+          <p class="text-white font-bold text-sm uppercase tracking-widest mb-4">Gateways</p>
+          <ul class="space-y-2.5 text-sm">
+            <li><a href="kuraimi.html">Kuraimi E-Pay</a></li>
+            <li><a href="cashpay.html">CashPay</a></li>
+            <li><a href="alamal-bank.html">Al Amal Bank</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="text-white font-bold text-sm uppercase tracking-widest mb-4">Company</p>
+          <ul class="space-y-2.5 text-sm">
+            <li><a href="https://techosolution.com">techosolution.com</a></li>
+            <li><a href="index.html#custom">Custom bank integrations</a></li>
+            <li><a href="#lead">Free compatibility check</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-white/10 mt-12 pt-7 flex flex-col sm:flex-row justify-between gap-3 text-sm">
+        <p>© 2026 Techosolution. All rights reserved.</p>
+        <p>Al Amal Bank gateway for WooCommerce.</p>
+      </div>
+    </div>
+  </footer>
+
+</div><!-- /.pg-landing -->
+<script src="assets/js/pg.js"></script>
+</body>
+</html>
